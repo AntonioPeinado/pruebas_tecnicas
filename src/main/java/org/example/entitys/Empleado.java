@@ -3,8 +3,7 @@ package org.example.entitys;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.Scanner;
+
 
 @Entity(name = "empleado")
 public class Empleado {
@@ -35,6 +34,8 @@ public class Empleado {
         this.cargo = cargo;
         this.fechaInicio = fechaInicio;
     }
+
+
 
     public Integer getId() {
         return id;

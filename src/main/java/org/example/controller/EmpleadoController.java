@@ -22,4 +22,12 @@ public class EmpleadoController {
     public List<Empleado> findAll() {
         return empleadoJPA.findAll();
     }
+
+    public void update(Empleado actualizarEmpleado) {
+        empleadoJPA.update(actualizarEmpleado);
+    }
+
+    public void delete (Integer eliminar){
+        empleadoJPA.delete(eliminar);
+    }
 }
